@@ -56,6 +56,15 @@ no changes added to commit (use "git add" and/or "git commit -a")
 (mdn-local-library-tutorial-mine) flynnt@DELL-GAMING:~/Programming/nickjj-docker-django-example$
 ```
 
+* Search for `doc_django`
+
+![image](https://github.com/brucestull/nickjj-docker-django-example/assets/47562501/0c30a413-818d-413c-a9bf-89f10681673c)
+
+* Search for `DocDjango`
+
+![image](https://github.com/brucestull/nickjj-docker-django-example/assets/47562501/93c994f8-ea7f-4892-aa47-2fec35be1272)
+
+
 ## Directory Structure
 
 ### Project Root
