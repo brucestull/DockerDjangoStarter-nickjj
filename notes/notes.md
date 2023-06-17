@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Notes](#notes)
-  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
+  - [Change Project Name](#change-project-name)
   - [Directory Structure](#directory-structure)
     - [Project Root](#project-root)
     - [`.github/`](#github)
@@ -64,6 +64,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ![image](https://github.com/brucestull/nickjj-docker-django-example/assets/47562501/93c994f8-ea7f-4892-aa47-2fec35be1272)
 
+[back to table of contents](#table-of-contents)
 
 ## Directory Structure
 
