@@ -1,5 +1,5 @@
 """
-WSGI config for docker_django project.
+WSGI config for doc_django project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

@@ -28,6 +28,34 @@
     - [`requirements.txt`](#requirementstxt)
     - [`run/`](#run)
 
+## Change Project Name
+
+`./bin/rename-project doc_django DocDjango`
+
+```bash
+(mdn-local-library-tutorial-mine) flynnt@DELL-GAMING:~/Programming/nickjj-docker-django-example$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .env.example
+        modified:   CHANGELOG.md
+        modified:   README.md
+        modified:   assets/package.json
+        modified:   bin/rename-project
+        modified:   notes/notes.md
+        modified:   src/config/asgi.py
+        modified:   src/config/celery.py
+        modified:   src/config/settings.py
+        modified:   src/config/urls.py
+        modified:   src/config/wsgi.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(mdn-local-library-tutorial-mine) flynnt@DELL-GAMING:~/Programming/nickjj-docker-django-example$
+```
+
 ## Directory Structure
 
 ### Project Root

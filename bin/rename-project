@@ -5,8 +5,8 @@ set -eo pipefail
 APP_NAME="${1}"
 MODULE_NAME="${2}"
 
-FIND_APP_NAME="docker_django"
-FIND_MODULE_NAME="DockerDjango"
+FIND_APP_NAME="doc_django"
+FIND_MODULE_NAME="DocDjango"
 FIND_FRAMEWORK="django"
 
 if [ -z "${APP_NAME}" ] || [ -z "${MODULE_NAME}" ]; then
