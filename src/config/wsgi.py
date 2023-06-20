@@ -1,5 +1,5 @@
 """
-WSGI config for doc_django project.
+WSGI config for d_django_starter project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

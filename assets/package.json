@@ -1,5 +1,5 @@
 {
-  "name": "doc_django",
+  "name": "d_django_starter",
   "private": true,
   "dependencies": {
     "autoprefixer": "10.4.14",

@@ -1,5 +1,5 @@
 """
-ASGI config for doc_django project.
+ASGI config for d_django_starter project.
 
 It exposes the ASGI callable as a module-level variable named `application`.
 
