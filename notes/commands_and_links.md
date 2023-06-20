@@ -3,7 +3,7 @@
 * `./run manage createsuperuser --email FlynntKnapp@email.app --username FlynntKnapp`
 * `./run manage createsuperuser --email KnotStaff@email.app --username KnotStaff`
 
-## Rename Project (Current Name: `d_django_starter`)
+## Rename Project (Current Name: `doc_django`)
 
 * `./bin/rename-project d_django_starter DDjangoStarter`
 
