@@ -2,9 +2,10 @@
 
 ![CI](https://github.com/nickjj/docker-django-example/workflows/CI/badge.svg?branch=main)
 
-## Source Repository
+## Source Repository and Creator
 
 - <https://github.com/nickjj/docker-django-example.git>
+- <https://github.com/nickjj>
 
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Django app.
