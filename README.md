@@ -2,6 +2,10 @@
 
 ![CI](https://github.com/nickjj/docker-django-example/workflows/CI/badge.svg?branch=main)
 
+## Features to Add
+
+- [ ] `CustomUser` model
+
 ## Source Repository and Creator
 
 - <https://github.com/nickjj/docker-django-example.git>
