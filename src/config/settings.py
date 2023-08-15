@@ -27,6 +27,9 @@ ALLOWED_HOSTS = list(map(str.strip, allowed_hosts.split(",")))
 
 # Application definitions
 INSTALLED_APPS = [
+    # List `accounts.apps.AccountsConfig` app first so the templates of
+    # that app override the default ones in `django.contrib.admin`.
+    "accounts.apps.AccountsConfig",
     "pages.apps.PagesConfig",
     "debug_toolbar",
     "django.contrib.admin",
@@ -137,7 +140,7 @@ CELERY_RESULT_BACKEND = REDIS_URL
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/New_York"
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
@@ -148,6 +151,8 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = ["/public", os.path.join(BASE_DIR, "..", "public")]
 STATIC_ROOT = "/public_collected"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 # Django Debug Toolbar
 # https://django-debug-toolbar.readthedocs.io/
@@ -160,3 +165,8 @@ if DEBUG:
         "127.0.0.1",
         "10.0.2.2",
     ]
+
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+
+THE_SITE_NAME = "Docker Django Starter"
