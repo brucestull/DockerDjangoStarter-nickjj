@@ -1,9 +1,9 @@
 from django.test import TestCase
 
-from accounts.models import CustomUser
 from accounts.admin import CustomUserAdmin
-from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
-
+from accounts.forms import CustomUserChangeForm
+from accounts.forms import CustomUserCreationForm
+from accounts.models import CustomUser
 
 USER_1_TEST_USERNAME = "user_1_test_username"
 USER_1_TEST_PASSWORD = "user_1_test_password"
@@ -19,6 +19,7 @@ class TestCustomUserAdmin(TestCase):
     Inherit from `django.test.TestCase` to access `self.client` and `self.assert*` methods.
     `self` will be an instance of `django.test.TestCase` and `django.test.TestCase` inherits from `unittest.TestCase`.
     """
+
     @classmethod
     def setUpTestData(cls):
         """

@@ -1,8 +1,9 @@
 from django.test import TestCase
 from django.urls import reverse
 
+from accounts.forms import CustomUserChangeForm
+from accounts.forms import CustomUserCreationForm
 from accounts.models import CustomUser
-from accounts.forms import CustomUserCreationForm, CustomUserChangeForm
 
 A_TEST_USERNAME = "ACustomUser"
 A_TEST_PASSWORD = "a_test_password"
@@ -68,7 +69,9 @@ class TestForbiddenView(TestCase):
         """
         response = self.client.get(FORBIDDEN_VIEW_URL)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.context["page_title"], FORBIDDEN_VIEW_PAGE_TITLE)
+        self.assertEqual(
+            response.context["page_title"], FORBIDDEN_VIEW_PAGE_TITLE
+        )
 
     def test_context_has_correct_the_site_name(self):
         """
@@ -117,7 +120,8 @@ class SignUpViewTest(TestCase):
         )
         # Test that the form's class name is the string `CustomUserCreationForm`.
         self.assertEqual(
-            response.context["form"].__class__.__name__, "CustomUserCreationForm"
+            response.context["form"].__class__.__name__,
+            "CustomUserCreationForm",
         )
 
     def test_redirects_to_login_page_on_success(self):
@@ -265,7 +269,7 @@ class CustomUserUpdateViewTest(TestCase):
                 kwargs={"pk": self.a_test_user.pk},
             )
         )
-        self.assertEqual(response.status_code, 403)        
+        self.assertEqual(response.status_code, 403)
 
     def test_the_site_name_in_context(self):
         """
