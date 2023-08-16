@@ -82,6 +82,11 @@
 
 ## Misc Commands
 
+* `docker exec <container_name> env`
+* `docker exec -it <container_name> /bin/bash`
+* `docker logs <container_name>`
+* `docker exec <container_name> python manage.py dbshell`
+
 * `cp .env.dev.example .env.dev`
 * `docker compose -f docker-compose.yml up -d --build`
 * `docker compose -f docker-compose.prod.yml up -d --build`
