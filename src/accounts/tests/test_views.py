@@ -222,7 +222,9 @@ class CustomUserUpdateViewTest(TestCase):
         )
         self.assertRedirects(
             response,
-            CUSTOM_LOGIN_VIEW_URL + "?next=" + f"{ACCOUNTS_URL}{self.a_test_user.pk}{EDIT_URL}",
+            CUSTOM_LOGIN_VIEW_URL
+            + "?next="
+            + f"{ACCOUNTS_URL}{self.a_test_user.pk}{EDIT_URL}",
             status_code=302,
             target_status_code=200,
             fetch_redirect_response=True,
@@ -313,7 +315,9 @@ class CustomUserDetailViewTest(TestCase):
         )
         self.assertRedirects(
             response,
-            CUSTOM_LOGIN_VIEW_URL + "?next=" + f"{ACCOUNTS_URL}{self.a_test_user.pk}{DETAIL_URL}",
+            CUSTOM_LOGIN_VIEW_URL
+            + "?next="
+            + f"{ACCOUNTS_URL}{self.a_test_user.pk}{DETAIL_URL}",
             status_code=302,
             target_status_code=200,
             fetch_redirect_response=True,
