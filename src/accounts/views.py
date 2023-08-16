@@ -10,7 +10,7 @@ from django.views.generic.edit import UpdateView
 from accounts.forms import CustomUserChangeForm
 from accounts.forms import CustomUserCreationForm
 from accounts.models import CustomUser
-from config.settings.common import THE_SITE_NAME
+from config.settings import THE_SITE_NAME
 
 
 class ForbiddenView(TemplateView):

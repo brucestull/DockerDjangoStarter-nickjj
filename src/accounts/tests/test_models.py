@@ -33,7 +33,7 @@ class CustomUserModelTest(TestCase):
         `CustomUser` model `registration_accepted` field `verbose_name`
         should be `Registration Accepted`.
         """
-        user = CustomUser.objects.get(id=1)
+        user = CustomUser.objects.get(id=self.user.id)
         self.assertEqual(
             user._meta.get_field(
                 "registration_accepted",
@@ -80,7 +80,7 @@ class CustomUserModelTest(TestCase):
         `CustomUser` model `registration_accepted` field `help_text` should
         be `Designates whether this user's registration has been accepted.`.
         """
-        user = CustomUser.objects.get(id=1)
+        user = CustomUser.objects.get(id=self.user.id)
         self.assertEqual(
             user._meta.get_field(
                 "registration_accepted",

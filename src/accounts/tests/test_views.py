@@ -5,6 +5,10 @@ from accounts.forms import CustomUserChangeForm
 from accounts.forms import CustomUserCreationForm
 from accounts.models import CustomUser
 
+ACCOUNTS_URL = "/accounts/"
+EDIT_URL = "/edit/"
+DETAIL_URL = "/detail/"
+
 A_TEST_USERNAME = "ACustomUser"
 A_TEST_PASSWORD = "a_test_password"
 A_TEST_FIRST_NAME = "A"
@@ -13,7 +17,7 @@ ANOTHER_TEST_USERNAME = "AnotherCustomUser"
 ANOTHER_TEST_PASSWORD = "another_test_password"
 ANOTHER_TEST_FIRST_NAME = "Another"
 
-THE_SITE_NAME = "Personal Assistant"
+THE_SITE_NAME = "Docker Django Starter"
 
 FORBIDDEN_VIEW_PAGE_TITLE = "Forbidden"
 FORBIDDEN_VIEW_URL = "/accounts/403/"
@@ -218,7 +222,7 @@ class CustomUserUpdateViewTest(TestCase):
         )
         self.assertRedirects(
             response,
-            CUSTOM_LOGIN_VIEW_URL + "?next=" + USER_UPDATE_VIEW_URL,
+            CUSTOM_LOGIN_VIEW_URL + "?next=" + f"{ACCOUNTS_URL}{self.a_test_user.pk}{EDIT_URL}",
             status_code=302,
             target_status_code=200,
             fetch_redirect_response=True,
@@ -309,7 +313,7 @@ class CustomUserDetailViewTest(TestCase):
         )
         self.assertRedirects(
             response,
-            CUSTOM_LOGIN_VIEW_URL + "?next=" + USER_DETAIL_VIEW_URL,
+            CUSTOM_LOGIN_VIEW_URL + "?next=" + f"{ACCOUNTS_URL}{self.a_test_user.pk}{DETAIL_URL}",
             status_code=302,
             target_status_code=200,
             fetch_redirect_response=True,
