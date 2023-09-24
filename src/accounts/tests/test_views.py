@@ -1,7 +1,6 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from accounts.forms import CustomUserChangeForm
 from accounts.forms import CustomUserCreationForm
 from accounts.models import CustomUser
 
@@ -79,7 +78,8 @@ class TestForbiddenView(TestCase):
 
     def test_context_has_correct_the_site_name(self):
         """
-        View should have context with `the_site_name` set to `Health Activities`.
+        View should have context with `the_site_name` set to
+        `Docker Django Starter`.
         """
         response = self.client.get(FORBIDDEN_VIEW_URL)
         self.assertEqual(response.status_code, 200)
@@ -122,7 +122,8 @@ class SignUpViewTest(TestCase):
             response.context["form"].__class__,
             CustomUserCreationForm,
         )
-        # Test that the form's class name is the string `CustomUserCreationForm`.
+        # Test that the form's class name is the string
+        # `CustomUserCreationForm`.
         self.assertEqual(
             response.context["form"].__class__.__name__,
             "CustomUserCreationForm",
@@ -154,7 +155,8 @@ class SignUpViewTest(TestCase):
     def test_the_site_name_in_context(self):
         """
 
-        View `context` should have a value of "Health Activities" for THE_SITE_NAME.
+        View `context` should have a value of "Docker Django Starter" for
+        THE_SITE_NAME.
         """
         response = self.client.get(SIGN_UP_VIEW_URL)
         self.assertEqual(response.status_code, 200)

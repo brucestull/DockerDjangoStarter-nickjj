@@ -89,7 +89,9 @@ class CustomUserUpdateView(
         Get the parent `context` and add `the_site_name` to the it.
         """
         # Call the base implementation first to get a context:
-        # In other words, get the existing context that Django is going to already use and then add our new dictionary item to the `context` dictionary.
+        # In other words, get the existing context that Django is going to
+        # already use and then add our new dictionary item to the `context`
+        # dictionary.
         context = super().get_context_data(**kwargs)
         context["the_site_name"] = THE_SITE_NAME
         return context
@@ -117,7 +119,8 @@ class CustomUserDetailView(
 
     def get_context_data(self, **kwargs):
         """
-        Get the parent `context` and add `the_site_name` and/or `page_title` to the it.
+        Get the parent `context` and add `the_site_name` and/or `page_title`
+        to the it.
         """
         context = super().get_context_data(**kwargs)
         context["the_site_name"] = THE_SITE_NAME

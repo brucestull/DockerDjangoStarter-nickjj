@@ -1,4 +1,3 @@
-from django.db import models
 from django.test import TestCase
 
 from accounts.models import CustomUser
@@ -65,9 +64,10 @@ class CustomUserModelTest(TestCase):
         This tests the actual `default` value of the `registration_accepted`
         field of a newly created user.
 
-        This test may be redundant with `test_registration_accepted_default_attribute_false`,
-        since Django makes sure to use the `registration_accepted` default
-        value we specify in the model, which is tested in
+        This test may be redundant with
+        `test_registration_accepted_default_attribute_false`, since Django
+        makes sure to use the `registration_accepted` default value we specify
+        in the model, which is tested in
         `test_registration_accepted_default_attribute_false`.
         """
         user = CustomUser.objects.get(id=self.user.id)

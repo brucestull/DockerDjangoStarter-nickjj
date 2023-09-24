@@ -10,7 +10,8 @@ class CustomUser(AbstractUser):
     # `registration_accepted` is used to control access to the site.
     registration_accepted = models.BooleanField(
         verbose_name="Registration Accepted",
-        help_text="Designates whether this user's registration has been accepted.",
+        help_text=(
+            "Designates whether this user's registration has been accepted."),
         default=False,
     )
 
