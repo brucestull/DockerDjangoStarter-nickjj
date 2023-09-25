@@ -1,5 +1,9 @@
 local_things*
 
+# Ignore `Pipfile` and `Pipfile.lock` since they are only used for linting in development
+Pipfile
+Pipfile.lock
+
 # Mostly created by https://www.gitignore.io
 
 
