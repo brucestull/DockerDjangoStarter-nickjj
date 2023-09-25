@@ -11,7 +11,8 @@ class CustomUser(AbstractUser):
     registration_accepted = models.BooleanField(
         verbose_name="Registration Accepted",
         help_text=(
-            "Designates whether this user's registration has been accepted."),
+            "Designates whether this user's registration has been accepted."
+        ),
         default=False,
     )
 
