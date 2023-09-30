@@ -2,9 +2,6 @@
 - `docker compose down`
 - `docker compose up`
 
-
-
-
 - `docker-compose -f docker-compose.yml up -d --build`
 - `docker-compose exec web python manage.py test`
 - `docker-compose exec web python manage.py makemigrations`
