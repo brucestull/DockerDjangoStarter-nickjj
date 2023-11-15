@@ -1,7 +1,5 @@
 # An example Django + Docker app
 
-![CI](https://github.com/nickjj/docker-django-example/workflows/CI/badge.svg?branch=main)
-
 ## Features to Add
 
 - [ ] `CustomUser` model
